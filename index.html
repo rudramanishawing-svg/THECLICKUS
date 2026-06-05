@@ -6,252 +6,74 @@
 <title>THECLICKUS | E-Commerce Growth Partner</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
-}
-
-body{
-background:#ffffff;
-color:#0f172a;
-}
-
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#fff;color:#050505}
 header{
-background:#ffffff;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 2px 15px rgba(0,0,0,0.08);
-position:sticky;
-top:0;
-z-index:999;
+height:70px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;
+border-bottom:1px solid #eee;background:#fff;position:sticky;top:0;z-index:99
 }
-
-.logo{
-font-size:28px;
-font-weight:800;
-color:#002D6B;
-}
-
-.logo span{
-color:#F97316;
-}
-
-nav a{
-margin-left:25px;
-text-decoration:none;
-color:#0f172a;
-font-weight:600;
-}
+.logo{font-size:28px;font-weight:900;color:#002D6B}
+.logo span{color:#F97316}
+nav a{margin-left:30px;text-decoration:none;color:#111;font-weight:600}
+.btnTop{background:#00e676;color:#000;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:700;border:1px solid #111}
 
 .hero{
-background:linear-gradient(135deg,#002D6B,#0F172A);
-color:white;
-padding:90px 8%;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:40px;
+padding:70px 8%;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center;min-height:650px
+}
+.badge{font-weight:800;color:#008a5b;margin-bottom:30px;font-size:26px}
+.hero h1{font-size:74px;line-height:1.05;font-weight:900;letter-spacing:-3px;margin-bottom:30px}
+.hero p{font-size:20px;line-height:1.7;color:#333;max-width:650px;margin-bottom:35px}
+.buttons a{display:inline-block;margin-right:18px;padding:18px 34px;border-radius:35px;text-decoration:none;font-weight:800;border:1px solid #111}
+.primary{background:#00e676;color:#000}
+.secondary{background:#fff;color:#111}
+
+.formBox{
+background:#fff;border:1.5px solid #111;border-radius:28px;padding:38px;box-shadow:0 25px 60px rgba(0,0,0,.08)
+}
+.formBox h2{font-size:28px;margin-bottom:25px}
+.input{width:100%;padding:18px 22px;margin-bottom:18px;border:1.5px solid #111;border-radius:35px;font-size:15px}
+.submit{width:100%;padding:18px;border-radius:35px;border:1px solid #111;background:#a7f3c7;font-weight:900;font-size:16px}
+.small{font-size:13px;color:#555;margin-top:18px;line-height:1.6}
+
+.platforms{padding:55px 8%;background:#fafafa;text-align:center}
+.title{font-size:42px;font-weight:900;margin-bottom:15px}
+.sub{color:#555;font-size:18px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:22px}
+.card{
+background:white;border:1px solid #eee;border-radius:18px;padding:28px;font-size:22px;font-weight:900;
+box-shadow:0 12px 30px rgba(0,0,0,.06)
 }
 
-.hero-text{
-max-width:600px;
+.services{padding:70px 8%}
+.serviceGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;margin-top:40px}
+.service{
+border:1px solid #e5e5e5;border-radius:22px;padding:30px;background:#fff;box-shadow:0 10px 30px rgba(0,0,0,.05)
 }
+.icon{font-size:38px;margin-bottom:18px}
+.service h3{font-size:23px;margin-bottom:12px;color:#002D6B}
+.service p{color:#555;line-height:1.6}
 
-.hero h1{
-font-size:54px;
-line-height:1.1;
-margin-bottom:20px;
+.banner{
+margin:40px 8%;padding:55px;border-radius:35px;background:#002D6B;color:white;
+display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center
 }
+.banner h2{font-size:44px;line-height:1.15}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.stat{background:white;color:#111;border-radius:18px;padding:25px;font-weight:900}
 
-.hero p{
-font-size:21px;
-line-height:1.6;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:16px 30px;
-background:#F97316;
-color:white;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-margin-right:15px;
-}
-
-.btn2{
-background:#14B8A6;
-}
-
-.dashboard{
-background:white;
-color:#0f172a;
-border-radius:25px;
-padding:30px;
-width:380px;
-box-shadow:0 25px 60px rgba(0,0,0,0.25);
-}
-
-.dashboard h3{
-color:#002D6B;
-margin-bottom:15px;
-}
-
-.stat{
-background:#f1f5f9;
-padding:18px;
-margin:15px 0;
-border-radius:14px;
-font-weight:bold;
-}
-
-section{
-padding:70px 8%;
-}
-
-.title{
-text-align:center;
-font-size:38px;
-color:#002D6B;
-margin-bottom:15px;
-}
-
-.subtitle{
-text-align:center;
-font-size:18px;
-color:#475569;
-margin-bottom:50px;
-}
-
-.platforms,
-.cards,
-.pricing{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-}
-
-.platform,
-.card,
-.price-card{
-background:#ffffff;
-padding:30px;
-border-radius:18px;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
-text-align:center;
-border:1px solid #e2e8f0;
-}
-
-.platform{
-font-size:24px;
-font-weight:bold;
-color:#002D6B;
-}
-
-.card h3{
-color:#002D6B;
-margin-bottom:12px;
-font-size:22px;
-}
-
-.card p{
-color:#475569;
-line-height:1.6;
-}
-
-.why{
-background:#f8fafc;
-}
-
-.points{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
-
-.point{
-background:white;
-padding:25px;
-border-left:6px solid #F97316;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,0.06);
-font-weight:bold;
-}
-
-.price-card h3{
-font-size:26px;
-color:#002D6B;
-margin-bottom:15px;
-}
-
-.price{
-font-size:34px;
-color:#F97316;
-font-weight:bold;
-margin-bottom:20px;
-}
-
-.price-card ul{
-list-style:none;
-line-height:2;
-color:#475569;
-}
-
-.contact{
-background:linear-gradient(135deg,#0F172A,#002D6B);
-color:white;
-text-align:center;
-}
-
-.contact h2{
-font-size:40px;
-margin-bottom:15px;
-}
-
-.contact p{
-font-size:19px;
-margin-bottom:25px;
-}
-
-footer{
-background:#020617;
-color:white;
-text-align:center;
-padding:25px;
-}
-
+.contact{padding:70px 8%;text-align:center;background:#f8fafc}
+.contact h2{font-size:44px;margin-bottom:15px}
 .whatsapp{
-position:fixed;
-right:20px;
-bottom:20px;
-background:#25D366;
-color:white;
-padding:15px 20px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 5px 20px rgba(0,0,0,0.3);
+position:fixed;right:20px;bottom:20px;background:#25D366;color:white;padding:16px 22px;
+border-radius:50px;text-decoration:none;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.25)
 }
+footer{padding:25px;background:#020617;color:#fff;text-align:center}
 
-@media(max-width:768px){
-.hero{
-flex-direction:column;
-text-align:center;
-}
-.hero h1{
-font-size:38px;
-}
-nav{
-display:none;
-}
-.dashboard{
-width:100%;
-}
+@media(max-width:850px){
+nav{display:none}
+.hero{grid-template-columns:1fr;padding:50px 6%}
+.hero h1{font-size:46px;letter-spacing:-1px}
+.banner{grid-template-columns:1fr;margin:25px 5%;padding:35px}
 }
 </style>
 </head>
@@ -262,141 +84,92 @@ width:100%;
 <div class="logo">THECLICK<span>US</span></div>
 <nav>
 <a href="#services">Services</a>
-<a href="#why">Why Us</a>
-<a href="#pricing">Pricing</a>
+<a href="#platforms">Platforms</a>
 <a href="#contact">Contact</a>
+<a class="btnTop" href="#contact">Get Started</a>
 </nav>
 </header>
 
 <section class="hero">
-<div class="hero-text">
-<h1>Build, Manage & Grow Your E-Commerce Business</h1>
-<p>THECLICKUS helps sellers manage Amazon, Flipkart, Meesho, Shopify and Myntra accounts with professional listing, ads, order and growth support.</p>
-<a href="#contact" class="btn">Get Free Consultation</a>
-<a href="#services" class="btn btn2">Explore Services</a>
+<div>
+<div class="badge">TheClickus Commerce</div>
+<h1>Sell more on ecommerce marketplaces.</h1>
+<p>
+We help sellers manage and grow their Amazon, Flipkart, Meesho, Shopify and Myntra accounts with product listing, catalog handling, ads support and weekly growth reports.
+</p>
+<div class="buttons">
+<a class="primary" href="#contact">Get Free Consultation</a>
+<a class="secondary" href="#services">View Services ➜</a>
+</div>
 </div>
 
-<div class="dashboard">
-<h3>Seller Growth Dashboard</h3>
-<div class="stat">📦 5000+ Products Listed</div>
-<div class="stat">📈 Sales Growth Strategy</div>
-<div class="stat">🛒 Multi Marketplace Support</div>
-<div class="stat">📊 Weekly Performance Report</div>
+<div class="formBox">
+<h2>Let's get started</h2>
+<input class="input" type="text" placeholder="Your Name *">
+<input class="input" type="tel" placeholder="Phone Number *">
+<input class="input" type="email" placeholder="Email Address">
+<select class="input">
+<option>Select Platform</option>
+<option>Amazon</option>
+<option>Flipkart</option>
+<option>Meesho</option>
+<option>Shopify</option>
+<option>Myntra</option>
+</select>
+<button class="submit">Request Free Audit</button>
+<p class="small">Our team will contact you for a free seller account audit and growth discussion.</p>
 </div>
 </section>
 
-<section>
+<section class="platforms" id="platforms">
 <h2 class="title">Platforms We Manage</h2>
-<p class="subtitle">Complete marketplace handling under one roof</p>
-
-<div class="platforms">
-<div class="platform">Amazon</div>
-<div class="platform">Flipkart</div>
-<div class="platform">Meesho</div>
-<div class="platform">Shopify</div>
-<div class="platform">Myntra</div>
+<p class="sub">Complete marketplace handling under one roof</p>
+<div class="grid">
+<div class="card">Amazon</div>
+<div class="card">Flipkart</div>
+<div class="card">Meesho</div>
+<div class="card">Shopify</div>
+<div class="card">Myntra</div>
 </div>
 </section>
 
-<section id="services">
+<section class="services" id="services">
 <h2 class="title">Our Services</h2>
-<p class="subtitle">Everything you need to run and grow your online selling business</p>
+<p class="sub">Everything required to run your online selling business</p>
 
-<div class="cards">
-<div class="card">
-<h3>Account Setup</h3>
-<p>Seller account setup, documentation support and marketplace onboarding.</p>
-</div>
-
-<div class="card">
-<h3>Product Listing</h3>
-<p>Professional product titles, descriptions, images and SEO optimized listings.</p>
-</div>
-
-<div class="card">
-<h3>Catalog Management</h3>
-<p>Daily catalog updates, stock updates, price updates and product corrections.</p>
-</div>
-
-<div class="card">
-<h3>Order Handling</h3>
-<p>Order processing, tracking, delivery follow-up and marketplace coordination.</p>
-</div>
-
-<div class="card">
-<h3>Ads Management</h3>
-<p>Marketplace advertising support for better visibility and sales growth.</p>
-</div>
-
-<div class="card">
-<h3>Reports & Support</h3>
-<p>Weekly performance reports, account health monitoring and regular support.</p>
-</div>
+<div class="serviceGrid">
+<div class="service"><div class="icon">🛒</div><h3>Seller Account Setup</h3><p>Marketplace onboarding, account setup and document guidance.</p></div>
+<div class="service"><div class="icon">📦</div><h3>Product Listing</h3><p>SEO optimized titles, descriptions, pricing and catalog creation.</p></div>
+<div class="service"><div class="icon">📊</div><h3>Catalog Management</h3><p>Stock update, price update, image update and listing correction.</p></div>
+<div class="service"><div class="icon">🚚</div><h3>Order Handling</h3><p>Daily order processing, return support and delivery follow-up.</p></div>
+<div class="service"><div class="icon">📈</div><h3>Ads & Growth</h3><p>Marketplace ads support, visibility improvement and sales strategy.</p></div>
+<div class="service"><div class="icon">🧾</div><h3>Weekly Reports</h3><p>Performance report, account health monitoring and improvement plan.</p></div>
 </div>
 </section>
 
-<section class="why" id="why">
-<h2 class="title">Why Choose THECLICKUS?</h2>
-<p class="subtitle">We manage your seller account like a growth partner</p>
-
-<div class="points">
-<div class="point">✅ Dedicated Account Manager</div>
-<div class="point">✅ Listing Optimization</div>
-<div class="point">✅ Return & RTO Support</div>
-<div class="point">✅ Weekly Growth Reports</div>
-<div class="point">✅ Marketplace Ads Support</div>
-<div class="point">✅ Fast Customer Support</div>
+<section class="banner">
+<div>
+<h2>Aap product bechiye, marketplace management hum sambhalenge.</h2>
 </div>
-</section>
-
-<section id="pricing">
-<h2 class="title">Our Plans</h2>
-<p class="subtitle">Choose a plan as per your business requirement</p>
-
-<div class="pricing">
-<div class="price-card">
-<h3>Starter</h3>
-<div class="price">Basic</div>
-<ul>
-<li>Account Setup</li>
-<li>Basic Product Listing</li>
-<li>Marketplace Guidance</li>
-<li>Email Support</li>
-</ul>
-</div>
-
-<div class="price-card">
-<h3>Growth</h3>
-<div class="price">Popular</div>
-<ul>
-<li>Listing Management</li>
-<li>Order Support</li>
-<li>Catalog Updates</li>
-<li>Weekly Report</li>
-</ul>
-</div>
-
-<div class="price-card">
-<h3>Premium</h3>
-<div class="price">Full</div>
-<ul>
-<li>Complete Account Handling</li>
-<li>Ads Support</li>
-<li>Growth Strategy</li>
-<li>Dedicated Manager</li>
-</ul>
-</div>
+<div class="stats">
+<div class="stat">5000+ Products Listed</div>
+<div class="stat">Multi Platform Support</div>
+<div class="stat">Weekly Reports</div>
+<div class="stat">Dedicated Manager</div>
 </div>
 </section>
 
 <section class="contact" id="contact">
 <h2>Start Growing With THECLICKUS</h2>
-<p>Aap product bechiye, marketplace management hum sambhalenge.</p>
-<a class="btn" href="https://wa.me/919834790524">WhatsApp Now</a>
+<p class="sub">Free seller account audit ke liye WhatsApp karein.</p>
+<div class="buttons">
+<a class="primary" href="https://wa.me/919834790524">WhatsApp Now</a>
+<a class="secondary" href="tel:+919834790524">Call Now</a>
+</div>
 </section>
 
 <footer>
-<p>© 2026 THECLICKUS | Complete E-Commerce Growth Partner</p>
+© 2026 THECLICKUS | Complete E-Commerce Growth Partner
 </footer>
 
 <a class="whatsapp" href="https://wa.me/919834790524">WhatsApp</a>
