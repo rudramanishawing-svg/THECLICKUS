@@ -4,7 +4,36 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>THECLICKUS | E-Commerce Growth Partner</title>
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:translateY(0)}
+}
 
+@keyframes floatBox{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-18px)}
+}
+
+.hero h1,.hero p,.badge,.buttons{
+animation:fadeUp 1s ease forwards;
+}
+
+.formBox{
+animation:fadeUp 1.2s ease forwards, floatBox 4s ease-in-out infinite;
+}
+
+.card,.service,.stat{
+transition:.3s;
+}
+
+.card:hover,.service:hover,.stat:hover{
+transform:translateY(-10px);
+box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
+
+.whatsapp{
+animation:floatBox 2.5s ease-in-out infinite;
+}
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body{background:#fff;color:#050505}
